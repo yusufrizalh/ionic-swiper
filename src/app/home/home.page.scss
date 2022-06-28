@@ -1,27 +1,46 @@
-#container {
-  text-align: center;
-
+.custom-nav {
+  height: 50px;
+  width: 20px;
+  cursor: pointer;
+  vertical-align: middle;
   position: absolute;
-  left: 0;
-  right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.prev-icon-custom {
+  background: url('https://cdn-icons-png.flaticon.com/512/151/151846.png') no-repeat scroll 0px 0px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.prev-icon-custom.disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
-#container a {
-  text-decoration: none;
+.next-icon-custom {
+  background: url('https://cdn-icons-png.flaticon.com/512/271/271228.png') no-repeat scroll -30px 0px;
+}
+
+.next-icon-custom.disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.slide-nav {
+  ion-icon {
+    height: 100%;
+  }
+}
+
+.slide-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: white;
+    background: #A7A7A7;
+    width: 30%;
+    border-radius: 4px;
+  }
 }
